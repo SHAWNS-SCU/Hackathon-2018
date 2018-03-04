@@ -7,7 +7,7 @@ body, html {
 }
 
 .login_box{
-    background:#f7f7f7;
+    background:#F7F7F7;
     border:3px solid #F4F4F4;
     padding-left: 15px;
     margin-bottom:25px;
@@ -62,7 +62,8 @@ hr{
  * Card component
  */
 .card {
-    background-color: #FFFFFF;
+   /* background-color: #FFFFFF; */
+	background: rgba(255,255,255,1);
     /* just in case there no content*/
     padding: 1px 25px 30px;
     margin: 0 auto 25px;
@@ -113,9 +114,10 @@ hr{
 }
 
 .form-signin #inputEmail,
+.form-signin #inputConfPassword,
 .form-signin #inputPassword {
     direction: ltr;
-    height: 44px;
+    height: 32px;
     font-size: 16px;
 }
 
@@ -162,6 +164,8 @@ hr{
     background-color: rgba(5, 239, 231, .9);
 }
 
+
+
 .forgot-password {
     color: rgb(104, 145, 162);
 }
@@ -170,4 +174,13 @@ hr{
 .forgot-password:active,
 .forgot-password:focus{
     color: rgb(12, 97, 33);
+}
+
+.sign-up {
+	font-family: "Verdana",sans-serif;
+    font-size: 12px;
+	font-style: normal;
+    font-weight: 100;
+    color:rgba(164, 164, 164, 0.44);
+	text-align: center;
 }
