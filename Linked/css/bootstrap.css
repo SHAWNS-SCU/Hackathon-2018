@@ -7,10 +7,11 @@ body, html {
 }
 
 .login_box{
-    background:#F7F7F7;
-    border:3px solid #F4F4F4;
+    background: rgba(44,52,73,1);
+    border:1px solid rgba(44,52,73,1);
     padding-left: 15px;
     margin-bottom:25px;
+	color: white;
     }
 .input_title{
 	font-family: "Verdana", sans-serif;
@@ -21,6 +22,7 @@ body, html {
 
 hr{
     width:100%;
+	color:white;
 }
     
 .welcome{
@@ -28,7 +30,7 @@ hr{
     font-style: normal;
 	margin-top: 20px;
     font-weight: 100;
-    color: white;
+    color: rgba(24,32,53,1);
     text-align: center;
 }
 .welcome_black{
@@ -71,7 +73,7 @@ hr{
  */
 .card {
    /* background-color: #FFFFFF; */
-	background: rgba(255,255,255,1);
+	background: rgba(24,32,53,1);
     /* just in case there no content*/
     padding: 1px 25px 30px;
     margin: 0 auto 25px;
@@ -87,7 +89,7 @@ hr{
 
 .cardlogin {
    /* background-color: #FFFFFF; */
-	background: rgba(255,255,255,1);
+	background: rgba(24,32,53,1);
     /* just in case there no content*/
     padding: 1px 25px 30px;
     margin: 0 auto 25px;
@@ -172,7 +174,7 @@ hr{
 }
 
 .btn.btn-signin {
-    background-color: rgba(5, 239, 231, .5);
+    background-color: rgba(44,52,73,1);
     padding: 0px;
     font-weight: 700;
     font-size: 14px;
@@ -190,7 +192,7 @@ hr{
 .btn.btn-signin:hover,
 .btn.btn-signin:active,
 .btn.btn-signin:focus {
-    background-color: rgba(5, 239, 231, .9);
+    background-color: rgba(54,62,83,1);
 }
 
 
