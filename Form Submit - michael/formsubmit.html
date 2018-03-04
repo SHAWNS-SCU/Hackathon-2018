@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset = "utc-8">
+<title> The bestest form </title>
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/bootstrap.min.js"></script>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Include the above in your HEAD tag -->
+</head>
+
+<body>
+<div class="container">
+<div class="col-md-5">
+    <div class="form-area">  
+        <form role="form" action="create_post.php" method="post" >
+        <br style="clear:both">
+                    <h3 style="margin-bottom: 25px; text-align: center;">Your Post</h3>
+					<div class="form-group">
+						<input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
+					</div>
+                    <div class="form-group">
+                        <select required onchange="updateSub()" style="width:100%" id="category" name="category">
+                            <option value="null"></option>
+                            <option value="resources">Resources</option>
+                            <option value="miscellaneous">Misc.</option>
+                            <option value="beans">Beans</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select style="display:none;width:100%" id="subcategory" name="subcategory">
+                            <option value="null"></option>
+                            <option value="water">Water</option>
+                            <option value="food">Food</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select style="width:100%" id="tags" name="tags">
+                            <option value = "request">Request for supplies</option>
+                            <option value = "PSA">PSA</option>
+                            <option value = "Offering">Offering</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="description" placeholder="Describe your situation." maxlength="200" rows="7"></textarea>
+                        <span class="help-block"><p id="characterLeft" class="help-block">Max 200 characters.</p></span>        
+                    </div>
+                    <div class="form-group">
+                        <input type="file" class="form-control" id="picture" name="picture">
+                    </div>
+                    <div class = "form-group">
+                        <input type="text" class="form-control" id="location" name="location" placeholder="City, State" required>
+                    </div>
+            
+        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+<script src="css/formsubmit.css"></script>
+<script src="js/formsubmit.js"></script>
+</html>
