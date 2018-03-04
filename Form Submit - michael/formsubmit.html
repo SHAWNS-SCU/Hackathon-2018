@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-<meta charset = "utc-8">
-<title> The bestest form </title>
-
-
-<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/formsubmit.css" rel="stylesheet" id="bootstrap-css">
 <script src="js/bootstrap.min.js"></script>
 
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!-- Include the above in your HEAD tag -->
-</head>
+<!------ Include the above in your HEAD tag ---------->
 
-<body>
-<div class="container">
-<div class="col-md-5">
-    <div class="form-area">  
+    <title>DiRe - Disaster Homepage</title>
+    <div class="container">
+    <h1 class="welcome text-center"></h1>
+        
+    <div class="logo-area">
+            <p class="logo"><img src="logowhite.png" alt="DiRe Logo" width=64 height=30></p>
+        </div>
+        
+        <div class="card card-container">
+        
+        <p class="title">Bean Disaster</p>
+            
         <form role="form" action="create_post.php" method="post" >
         <br style="clear:both">
-                    <h3 style="margin-bottom: 25px; text-align: center;">Your Post</h3>
-					<div class="form-group">
-						<input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
-					</div>
+                    <h3 style="text-align: center;">Your Post</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
+                    </div>
                     <div class="form-group">
                         <select required onchange="updateSub()" style="width:100%" id="category" name="category">
                             <option value="null"></option>
@@ -58,10 +58,14 @@
             
         <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
         </form>
-    </div>
-</div>
-</div>
-</body>
-<script src="css/formsubmit.css"></script>
-<script src="js/formsubmit.js"></script>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+
+    <script> 
+        function submit3(comment_ID)
+        {
+            global.comment_ID = comment_ID;
+        }
+    </script>
+
 </html>
