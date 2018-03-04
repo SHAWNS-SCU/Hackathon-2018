@@ -8,6 +8,7 @@ CREATE TABLE DisasterList (
 
 CREATE TABLE Post (
   CommentID NUMBER(38) PRIMARY KEY,
+  DisasterID NUMBER(38) PRIMARY KEY,
   Title VARCHAR(35),
   Category VARCHAR(35),
   Subcategory VARCHAR (35),
