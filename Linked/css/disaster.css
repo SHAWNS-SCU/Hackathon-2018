@@ -101,5 +101,17 @@ hr{
 	font-weight:100;
 	color:white;
 	font-size: 32px;
-	height: auto
+	height: auto;
+}
+
+.post-header{
+	font-weight:bold;
+	height:auto;
+	font-size:2vw;
+}
+
+.post-tags{
+	font-weight:normal;
+	font-size: 18px;
+	color:rgb(195,195,195);
 }
