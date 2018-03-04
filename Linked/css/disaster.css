@@ -1,9 +1,9 @@
 
 body, html {
-    height: 100%;
-    background: url("../res/bkgd.jpg") no-repeat bottom center scroll;
-    background-repeat: no-repeat;
-    background-color: black;
+		height: 100%;
+		background: url("../res/bkgd.jpg");
+		background-repeat: no-repeat;
+		background-color: black;
 }
 
 .input_title{
