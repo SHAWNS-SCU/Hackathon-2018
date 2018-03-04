@@ -38,12 +38,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   oci_execute($sql);
 
-  "<p>$title</p>"
-
-  <script>
-
-  </script>
-
 
 }
 ?>
