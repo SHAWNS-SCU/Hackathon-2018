@@ -1,0 +1,44 @@
+<link href="css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+<!-- fuck devin -->
+<script src="https://use.typekit.net/ayg4pcz.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	
+	<title>DiRe - Create Account</title>
+    <div class="container">
+    <h1 class="welcome text-center"></h1>
+    <div class="card card-container">
+    
+        <img src="res/logo.png" alt="DiRe Logo" width=64 height=30>
+
+        <hr>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <p class="input_title">Email</p>
+                <input type="email" id="inputEmail" class="login_box" placeholder="beans@gmail.com" required autofocus>
+                <p class="input_title">Password</p>
+                <input type="password" id="inputPassword" class="login_box" placeholder="********" required="required">     
+				<p class="input_title">Confirm Password</p>
+                <input type="password" id="inputConfPassword" class="login_box" placeholder="********" required="required" oninput="check(this)">     
+				
+				<script language='javascript' type='text/javascript'>
+					function check(input) {
+						if (input.value != document.getElementById('inputPassword').value) {
+						input.setCustomValidity('Password Must be Matching.');
+					} 	else {
+						// input is valid -- reset the error message
+						input.setCustomValidity('');
+						}
+					}
+				</script>
+				
+				<button class="btn btn-signin" type="submit" formaction="index.html">Create New Account</button>
+				
+				<p class="sign-up"><text>Already have an account? </text><a href="index.html"> Log in!</a></button>
+				
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
