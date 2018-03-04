@@ -31,6 +31,14 @@ hr{
     color: white;
     text-align: center;
 }
+.welcome_black{
+    color:black;
+	font-family: "Verdana",sans-serif;
+    font-style: normal;
+	margin-top: 20px;
+    font-weight: 100;
+    text-align: center;
+}
 
 .login_title{
     font-family: "Verdana",sans-serif;
