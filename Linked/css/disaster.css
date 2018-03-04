@@ -85,10 +85,9 @@ hr{
 	margin-top:0px;
 	margin-bottom:0px;
 	
-	padding: 10px 12px;
+	padding: 10px;
 	
 	vertical-align:middle;
-	
 
 	border-bottom-color:white;
 	border-bottom-style:groove;
@@ -102,4 +101,5 @@ hr{
 	font-weight:100;
 	color:white;
 	font-size: 32px;
+	height: auto
 }
